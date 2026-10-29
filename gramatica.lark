@@ -1,0 +1,17 @@
+
+start: pedido
+
+pedido: PEDIDO CLIENTE IGUAL IDENTIFICADOR PRODUCTO IGUAL IDENTIFICADOR CANTIDAD IGUAL NUMERO PUNTO_COMA
+
+PEDIDO.2: "PEDIDO"
+CLIENTE.2: "cliente"
+PRODUCTO.2: "producto"
+CANTIDAD.2: "cantidad"
+IGUAL: "="
+PUNTO_COMA: ";"
+
+IDENTIFICADOR: /[A-Za-z][A-Za-z0-9_]*/
+NUMERO: /[0-9]+/
+
+%import common.WS
+%ignore WS
